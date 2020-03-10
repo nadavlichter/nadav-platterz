@@ -1,0 +1,15 @@
+type Restaurant (
+    id: ID!
+    name: String!
+    description: String
+    priceRange: Int
+    imageSrc: String
+    imageDescription: String
+    menu: String
+)
+
+type RestaurantProduct (
+    id: ID!
+    item: String!
+    price: Double
+)

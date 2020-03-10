@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/rest # Our Database URL
+    driver-class-name: org.postgresql.Driver # We're using PostgreSQL
+    username: postgres
+    password: docker
+
+  jpa:
+    generate-ddl: true # Generate schema from entities
+    jpa.hibernate.ddl-auto: create-drop # Schema-change strategy
+
+graphql.packages: platterz.services.restms.models # This is the package where our database entities reside
